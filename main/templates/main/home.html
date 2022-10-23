@@ -1,0 +1,242 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+</head>
+<body>
+    <section class="header" style="background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url({% static 'img/banner.png' %});">
+
+        <nav>
+            <a href="index.html"><img src="{% static 'img/logo2.png' %}"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars"  onclick="showMenu()"></i>
+        </nav>
+
+    <div class="text-box">
+        <h1>World Bigest University</h1>
+        <p>Making website is now one of the easiest thing in the world. You just need to learn HTML, CSS<br> Javascript an you are good to go.</p>
+        <a href="" class="hero-btn">Visit Us To Know More</a>
+    </div>
+
+    </section>
+
+
+<!-----------------Course------------------->
+
+<section class="course">
+    <h1>Course We Offer</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Pellentesque aliquet turpis turpis nulla, eleifend faucibus easiest
+               sollicitudin ut. Maeaenas ut venenatis ex, et dapibus purus
+               Donec sit.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Pellentesque aliquet turpis turpis nulla, eleifend faucibus easiest
+               sollicitudin ut. Maeaenas ut venenatis ex, et dapibus purus
+               Donec sit.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+               Pellentesque aliquet turpis turpis nulla, eleifend faucibus easiest
+               sollicitudin ut. Maeaenas ut venenatis ex, et dapibus purus
+               Donec sit.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<!---------------Campus------------>
+
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="campus-col">
+            <img src="{% static 'img/london.png' %}">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'img/newyork.png' %}">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="{% static 'img/washington.png' %}">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-----------Facilities------------->
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="{% static 'img/library.png' %}">
+            <h3>World Class library</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipicing elit.
+               Pellentesque aliquet turpis nulla.
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'img/basketball.png' %}">
+            <h3>Largest Play Ground</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipicing elit.
+               Pellentesque aliquet turpis nulla.
+            </p>
+        </div>
+        <div class="facilities-col">
+            <img src="{% static 'img/cafeteria.png' %}">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipicing elit.
+               Pellentesque aliquet turpis nulla.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!-------------testimonials--------------->
+
+<section class="testimonials">
+    <h1>What Our Students Says </h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+    <div class="row">
+        <div class="testimonials-col">
+           <img src="{% static 'img/user1.jpg' %}">
+           <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque aliquet turpis turpis nulla, eleifend faucibus easiest
+                sollicitudin ut. Maeaenas ut venenatis ex, et dapibus purus</p>
+            <h3>Christaine Berkley</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+           </div>
+        </div>
+           <div class="testimonials-col">
+             <img src="{% static 'img/user2.jpg' %}">
+           <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque aliquet turpis turpis nulla, eleifend faucibus easiest
+                sollicitudin ut. Maeaenas ut venenatis ex, et dapibus purus</p>
+            <h3>David Byer</h3>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+           </div>
+        </div>
+    </div>
+</section>
+
+
+<!------------Call To Action------------>
+
+<section class="cta" style="background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url({% static 'img/banner2.jpg' %});">
+        <h1>Enroll for Our Vatious Online Courses<br> Anywhere From The World</h1>
+        <a href="" class="hero-btn">CONTACT US</a>
+</section>
+
+<!----------Footer----------->
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+       Pellentesque aliquet turpis turpis nulla, eleifend faucibus est<br>
+       sollicitudin ut. Maeaenas ut venenatis ex, et dapibus purus
+    </p>
+
+    <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.linkedin.com/in/shamima-akter-014b15220/"
+          >
+            <i class="fab fa-2x fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://twitter.com/Shamima_Sigma">
+            <i class="fab fa-2x fa-twitter"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://github.com/Shamima-Sigma?fbclid=IwAR2egszGqBVz9IARwBsyZLAYC-A3ZISoIzVQ_iAdQ9efu_-65owR9JuCi_c"
+          >
+            <i class="fab fa-2x fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.freecodecamp.org/Sigma1418"
+          >
+            <i class="fab fa-2x fa-free-code-camp"></i>
+          </a>
+        </li>
+      </ul>
+</section>
+
+<!--JavaScript for Toggle Menu-->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu()
+        {
+            navLinks.style.right = "0";
+        }
+        function hideMenu()
+        {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
